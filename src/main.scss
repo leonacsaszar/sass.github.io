@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+$font-family-sans-serif: 'Dancing Script', cursive,     
+-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+
+
+$info:          #3A3B3C;
+$purple:        #cf649a;
+
+
+$theme-colors: (
+  "darkGray":     $info,
+  "purple":     $purple
+) !default;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+.blanco{
+  color: $light;
+}
+
+.text-light{
+  @extend .blanco;
+}
+.card p{
+  @extend .blanco;
+}
+.centrado{
+  margin: 2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.card{
+    background-color: $info ;
+    @extend .centrado;
+    
+}
+$imgSize: 80%;
+
+.card img{
+  width: $imgSize;
+  @extend .centrado;
+  
+}
